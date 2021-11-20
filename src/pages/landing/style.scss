@@ -1,0 +1,22 @@
+$header_background: #52B69A;
+$header_title: #fff;
+
+.header {
+    font-family: 'inter';
+    padding: 8px 12px;
+    background-color: $header_background;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 32px;
+    color: $header_title;
+}

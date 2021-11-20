@@ -1,0 +1,15 @@
+.pageNotFound {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pageNotFound__message {
+    font-size: 32px;
+    font-family: 'Inter';
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+}
