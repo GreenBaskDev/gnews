@@ -1,6 +1,16 @@
 $header_background: #52B69A;
 $header_title: #fff;
 
+@mixin mediaquery ($type) {
+
+    @if $type == ">1600" {
+        @media only screen and (max-width: 1600px) {
+            @content;
+        }
+    }
+    
+}
+
 .header {
     font-family: 'inter';
     padding: 8px 12px;
@@ -8,6 +18,11 @@ $header_title: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 50px;
+    transition: all 2.5s ease-in-out;
+
+    @include mediaquery(">1600") {
+        border-radius: 0px;
+    }
 }
 
 .header {
