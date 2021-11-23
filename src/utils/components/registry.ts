@@ -1,31 +1,41 @@
 export const menuList = [
     { 
-        main: "Health and Wellness", 
+        main: "Health and Wellness",
+        path: "/healt", 
         sub: [  
                 {
                     main: "Active Lifestyle",
+                    path: "/healt/activeStyle", 
                     sub: []
                 },
                 {
                     main: "Food & Diet",
+                    path: "/healt/food", 
                     sub: []
                 }
             ]
     },
     {
         main: "Recipes",
-        sub: []
+        path: "/recipes",
+        sub: [
+            {
+                main: "Food & Diet",
+                path: "/recipes/food",
+                sub: []
+            }
+        ]
     },
-    {
-        main: "Existing Realities",
-        sub: []
-    },
-    {
-        main: "Sus Tech",
-        sub: [],
-    },
-    {
-        main: "*Community*",
-        sub: []
-    }
+    // {
+    //     main: "Existing Realities",
+    //     sub: []
+    // },
+    // {
+    //     main: "Sus Tech",
+    //     sub: [],
+    // },
+    // {
+    //     main: "*Community*",
+    //     sub: []
+    // }
 ]

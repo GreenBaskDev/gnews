@@ -1,0 +1,24 @@
+.mainCard {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+.mainCard__imgWrapper {
+    width: 59%;
+    min-width: 500px;
+    height: auto;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainCard__contentWrapper {
+    flex-grow: 1;
+    background-color: black;
+    margin-left: 1px;
+}

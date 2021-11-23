@@ -1,0 +1,45 @@
+$header_background: #52B69A;
+$header_title: #fff;
+
+.header {
+    font-family: 'inter';
+    padding: 8px 12px;
+    background-color: $header_background;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header_logo {
+    font-size: 32px;
+    color: $header_title;
+}
+
+.header__icons {
+    width: auto;
+    height: 100%;
+    display: flex;
+    margin: auto 0px auto auto;
+}
+
+.socialIcons {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin: auto 8px;
+
+    cursor: pointer;
+}
+
+.socialIcons:hover path{
+    fill: #fff!important;
+}

@@ -1,15 +1,13 @@
 import { FC } from "react";
 import { props } from "../../type/components/menu";
-import { createMenu } from "../../utils/components/menu";
+import { CreateMenu } from "../../utils/components/createMenu";
 import "./style.scss";
 
 const Menu: FC<props> = (props) => {
 
     return (
         <nav className="nav">
-            <ul>
-                {createMenu(props.menu)}
-            </ul>
+            <CreateMenu list={props.menu}/>
         </nav>
     )
 }

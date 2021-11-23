@@ -1,5 +1,6 @@
 export type menu = {
     main: string,
+    path: string,
     sub: menu[],
 }
 
