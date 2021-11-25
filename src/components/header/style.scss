@@ -22,8 +22,11 @@
 }
 
 .header_logo {
-    font-size: 32px;
     color: $color-white;
+}
+
+.headerLogo__title {
+    font-size: var(--font-size-h1);
 }
 
 .header__icons {

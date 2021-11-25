@@ -8,7 +8,7 @@ const Header: FC = () => {
     return (
         <header className="header">
             <div className="header_logo">
-                Green Basket
+                <h1 className="headerLogo__title">Green Basket</h1>
             </div>
             
             <Menu menu={menuList} />
