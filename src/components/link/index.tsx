@@ -11,7 +11,7 @@ const CustomLink:FC<props> = ({ children, to, ...props }: LinkProps) => {
     return (
       <div>
         <Link
-          style={{ textDecoration: match ? "underline" : "none" }}
+          style={{ textDecoration: match ? "underline" : "none", color: "#fff"}}
           to={to}
           {...props}
         >

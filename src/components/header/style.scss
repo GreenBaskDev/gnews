@@ -1,13 +1,15 @@
-$header_background: #52B69A;
-$header_title: #fff;
-
 .header {
     font-family: 'inter';
     padding: 8px 12px;
-    background-color: $header_background;
+    background-color: $color-black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 50px;
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    @include break(xl, max) {
+        border-radius: 0;
+    }
 }
 
 .header {
@@ -21,7 +23,7 @@ $header_title: #fff;
 
 .header_logo {
     font-size: 32px;
-    color: $header_title;
+    color: $color-white;
 }
 
 .header__icons {
@@ -29,11 +31,15 @@ $header_title: #fff;
     height: 100%;
     display: flex;
     margin: auto 0px auto auto;
+    
+    @include break(s, max) {
+        display: none;
+    }
 }
 
 .socialIcons {
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     margin: auto 8px;
 
@@ -41,5 +47,5 @@ $header_title: #fff;
 }
 
 .socialIcons:hover path{
-    fill: #fff!important;
+    fill: $color-grey-light-1!important;
 }

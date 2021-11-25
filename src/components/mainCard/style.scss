@@ -1,24 +1,102 @@
 .mainCard {
-    width: 100%;
+    width: 99%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     height: auto;
+    margin: auto;
+    @include break(m, max) {
+        flex-flow: column-reverse;
+    }
 }
 
 .mainCard__imgWrapper {
-    width: 59%;
-    min-width: 500px;
+    width: 64.9%;
     height: auto;
+    max-height: 550px;
+    
+    @include break(s, max) {
+        width: 80%;
+        margin: auto;
+        margin-top: -30px;
+        z-index: 1;
+    }
+
+    @include break(m, min-max) {
+        width: 65%;
+        margin: auto;
+        margin-top: -30px;
+        z-index: 1;
+    }
 }
 
 .mainImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    @include break(m, max) {
+        width: 100%;
+        border-radius: 10px;
+    }
 }
 
 .mainCard__contentWrapper {
-    flex-grow: 1;
-    background-color: black;
-    margin-left: 1px;
+    width: 35%;
+    background-color: $color-black;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    font-family: "inter";
+    text-align: left;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @include break(m, max) {
+        width: 99%;
+        margin: auto;
+        border-radius: 10px;
+    }
+}
+
+.mainCardContentWrapperText {
+    margin: auto;
+    padding: 40px;
+}
+
+.mainCardContentWrapperText__category{
+    font-size: var(--font-size-h4);
+    text-decoration: underline;
+    color: $color-white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.mainCardContentWrapperText__title{
+    font-size: var(--font-size-h2);
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: $color-white;
+}
+
+.mainCardContentWrapperText__hook{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: $color-white;
+}
+
+.mainCardContentWrapperText__autor{
+    font-size: var(--font-size-h5);
+    color: $color-white;
+    margin-bottom: 0;
+
+}
+
+.mainCardContentWrapperText__date{
+    font-size: var(--font-size-h6);
+    color: $color-white;
+    margin-top: 10px;
 }
