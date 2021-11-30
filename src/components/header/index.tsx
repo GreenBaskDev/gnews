@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Icon from "../../components/Icon";
 import Menu from "../../components/menu";
+import Icon from "../../components/Icon";
 import { menuList } from "../../utils/components/registry";
 
 const Header: FC = () => {

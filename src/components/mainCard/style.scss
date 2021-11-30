@@ -11,7 +11,7 @@
 }
 
 .mainCard__imgWrapper {
-    width: 64.9%;
+    width: 65%;
     height: auto;
     max-height: 550px;
     
@@ -44,30 +44,38 @@
 }
 
 .mainCard__contentWrapper {
-    width: 35%;
+    flex-grow: 1;
     background-color: $color-black;
     color: $color-white;
     display: flex;
     align-items: center;
     font-family: "inter";
     text-align: left;
-
+    
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
+    
     @include break(m, max) {
         width: 99%;
         margin: auto;
         border-radius: 10px;
     }
+    
+    @include break(l, min) {
+        max-width: 35%;
+    }
 }
 
 .mainCardContentWrapperText {
-    margin: auto;
     padding: 40px;
+    width: 100%;
+
+    @include break(s, max) {
+        padding: 20px;
+    }
 }
 
-.mainCardContentWrapperText__category{
+.mainCardContentWrapperText__category {
     font-size: var(--font-size-h4);
     text-decoration: underline;
     color: $color-white;
@@ -75,27 +83,27 @@
     margin-bottom: 10px;
 }
 
-.mainCardContentWrapperText__title{
+.mainCardContentWrapperText__title {
     font-size: var(--font-size-h2);
     margin-top: 10px;
     margin-bottom: 0;
     color: $color-white;
 }
 
-.mainCardContentWrapperText__hook{
+.mainCardContentWrapperText__hook {
     margin-top: 10px;
     margin-bottom: 0;
     color: $color-white;
 }
 
-.mainCardContentWrapperText__autor{
+.mainCardContentWrapperText__autor {
     font-size: var(--font-size-h5);
     color: $color-white;
     margin-bottom: 0;
 
 }
 
-.mainCardContentWrapperText__date{
+.mainCardContentWrapperText__date {
     font-size: var(--font-size-h6);
     color: $color-white;
     margin-top: 10px;

@@ -15,7 +15,7 @@ const MainCard: FC<props> = (props) => {
                 <div className="mainCardContentWrapperText">
                     <h4 className="mainCardContentWrapperText__category">{category}</h4>
                     <h2 className="mainCardContentWrapperText__title">{title}</h2>
-                     <p className="mainCardContentWrapperText__hook">{paragraph}</p>
+                    <p className="mainCardContentWrapperText__hook">{paragraph}</p>
                     <h5 className="mainCardContentWrapperText__autor">{editor}</h5>
                     <h6 className="mainCardContentWrapperText__date">{date}</h6>
                 </div>

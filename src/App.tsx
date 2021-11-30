@@ -1,4 +1,4 @@
-import './_gnews.scss';
+import './style/index.scss';
 import Landing from './pages/landing';
 
 import {

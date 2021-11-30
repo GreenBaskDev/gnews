@@ -1,8 +1,3 @@
-$color-grey-light-1: #d4d4d4; 
-$color-black: #000;
-$color-white: #fff;
-
-
 @mixin break($prefix, $type: false){
     
     @if $prefix == s {
@@ -27,11 +22,3 @@ $color-white: #fff;
         @else { @content; }
     }
 }
-
-
-/*   imports   */
-@import "../src/components/mainCard/style.scss";
-@import "../src/components/verticalCard/style.scss";
-@import "../src/components/menu/style.scss";
-@import "../src/components/header/style.scss";
-@import "../src/App.scss";
