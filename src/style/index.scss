@@ -2,12 +2,15 @@
 @import "./variables";
 @import "./break";
 
-// styles
+// styles components
 @import "../components//mainCard/style.scss";
 @import "../components/verticalCard/style.scss";
 @import "../components/menu/style.scss";
 @import "../components/header/style.scss";
 @import "../App.scss";
+
+//style landing
+@import "../pages/landing/style.scss";
 
 
 

@@ -7,9 +7,9 @@ const VerticalCard: FC<props> = (props) => {
 
 
     return (
-        <section className="verticalCard">
+        <div className="verticalCard">
             <div className="verticalCard__imgWrapper">
-                <img src={source.main} alt="main card" className="mainImg"/>
+                <img src={source.main} alt="main card" className="verticalCard__imgMain"/>
             </div>
             <div className="verticalCard__contentWrapper">
                 <div className="verticalCardContentWrapperText">
@@ -20,7 +20,7 @@ const VerticalCard: FC<props> = (props) => {
                     <h6 className="verticalCardContentWrapperText__date">{date}</h6>
                 </div>
             </div>
-        </section>
+        </div>
     )   
 }
 

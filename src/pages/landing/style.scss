@@ -7,3 +7,14 @@
 .main {
     margin-top: 55px;
 }
+
+.main__verticalCardWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px auto 0 auto;
+    width: 99%;
+    
+    @include break(m, max) {
+        margin-top: 20px;
+    }
+}
