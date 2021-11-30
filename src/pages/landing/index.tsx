@@ -1,4 +1,5 @@
 import { FC } from "react";
+import ArticleHeader from "../../components/articlesHeader";
 import Header from "../../components/header";
 import MainCard from "../../components/mainCard";
 import VerticalCard from "../../components/verticalCard";
@@ -39,6 +40,10 @@ const Landing: FC = () => {
                         date={"22.11.21"}
                     />
                 </section>
+
+                <ArticleHeader 
+                    title={"LAST NEWS"}
+                />
             </main>
         </div>
     )

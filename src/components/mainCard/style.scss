@@ -1,7 +1,6 @@
 .mainCard {
-    width: 99%;
+    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     height: auto;
     margin: auto;
@@ -58,7 +57,7 @@
     border-bottom-right-radius: 10px;
     
     @include break(m, max) {
-        width: 99%;
+        width: 100%;
         margin: auto;
         border-radius: 10px;
     }

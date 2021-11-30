@@ -5,6 +5,7 @@ import { props } from "../../type/components/link";
 
 
 const CustomLink:FC<props> = ({ children, to, ...props }: LinkProps) => {
+
     let resolved = useResolvedPath(to);
     let match = useMatch({ path: resolved.pathname, end: true });
   
@@ -20,6 +21,7 @@ const CustomLink:FC<props> = ({ children, to, ...props }: LinkProps) => {
         {match && " (active)"}
       </div>
     );
+    
 }
 
 export default CustomLink;
