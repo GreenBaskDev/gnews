@@ -19,24 +19,24 @@
     position: fixed;
     box-sizing: border-box;
     width: 100%;
-}
 
-.header_logo {
-    color: $color-white;
-}
+    &_logo {
+        color: $color-white;
+    }
 
-.headerLogo__title {
-    font-size: var(--font-size-h2);
-}
+    &__title {
+        font-size: var(--font-size-h2);
+    }
 
-.header__icons {
-    width: auto;
-    height: 100%;
-    display: flex;
-    margin: auto 0px auto auto;
-    
-    @include break(s, max) {
-        display: none;
+    &__icons {
+        width: auto;
+        height: 100%;
+        display: flex;
+        margin: auto 0px auto auto;
+        
+        @include break(s, max) {
+            display: none;
+        }
     }
 }
 
@@ -47,8 +47,7 @@
     margin: auto 8px;
 
     cursor: pointer;
-}
-
-.socialIcons:hover path{
-    fill: $color-grey-light-1!important;
+    &:hover path{
+        fill: $color-grey-light-1!important;
+    }
 }

@@ -25,17 +25,5 @@ export const menuList = [
                 sub: []
             }
         ]
-    },
-    // {
-    //     main: "Existing Realities",
-    //     sub: []
-    // },
-    // {
-    //     main: "Sus Tech",
-    //     sub: [],
-    // },
-    // {
-    //     main: "*Community*",
-    //     sub: []
-    // }
+    }
 ]
